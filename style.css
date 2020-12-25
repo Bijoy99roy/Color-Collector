@@ -1,0 +1,14 @@
+button {
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    padding: .3em .5em;
+    padding-left: 0;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 1em .3em;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #efefef;
+    transition: .4s ease;
+  }
