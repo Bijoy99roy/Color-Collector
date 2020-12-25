@@ -23,7 +23,7 @@ function setup()
   firebase.initializeApp(firebaseConfig);
    db = firebase.firestore();
 
-  console.log(firebase);
+  //console.log(firebase);
   createCanvas(200, 200);
   pickColor();
   background(r, g, b);
@@ -86,7 +86,7 @@ function getData()
 function sendData()
 {
 
-  console.log(r+" "+g+" "+b)
+  //console.log(r+" "+g+" "+b)
   db.collection("ColorData").add({
     r: r,
     g: g,
@@ -95,12 +95,12 @@ function sendData()
 })
 .then(function(docRef) {
   
-    console.log("Document written with ID: ", docRef.id);
+    //console.log("Document written with ID: ", docRef.id);
     pickColor();
    // background(r, g, b);
 })
 .catch(function(error) {
-    console.error("Error adding document: ", error);
+    //console.error("Error adding document: ", error);
 });
-  console.log(this.html());
+  //console.log(this.html());
 }
